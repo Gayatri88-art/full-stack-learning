@@ -1,0 +1,26 @@
+.first{
+  text-align: justify;
+  font-weight: bold;
+  text-decoration:  red wavy underline;
+  font-family: fantasy;
+
+}
+
+.second{
+  text-align: center;
+  font-weight: lighter;
+  text-decoration: double overline;
+  line-height: 2.5;
+  letter-spacing: 2px;
+
+}
+.third{
+  text-align: right;
+  font-weight: 400;
+  text-decoration: dotted line-through;
+
+}
+H3{
+  color: orange;
+  text-decoration:  rgb(42, 198, 229) double UNDERLINE;
+}
