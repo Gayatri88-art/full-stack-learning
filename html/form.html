@@ -112,9 +112,59 @@ option in radio but in checkbox still u can select multiple options at a time-->
     <label for="orange">orange</label>
   </input>
   <button>submit</button>
+
+
+<hr>
+<!--drop down list-->
+  <div>
+    choose your profession
+    <select name="profession" id="profession">
+      <option >select your option</option>
+      <option value="student">student</option>
+      <option value="devloper">devloper</option>
+    </select>
+    <button>submit</button>
+  </div>
+
+  <!--range-->
+<label for="vol"> select your volume level</label>
+  <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="20"></input>
+  
+  <br>
+  <!--text area-->
+  <label for="feedback">please give your valuable feedback:</label>
+  <textarea  id="feedback" name="feedback" rows="10" cols="10" placeholder="write your feedback here"></textarea>
+  <button>submit</button>
+
+  
+
+
+
 </form>
 </div>
+<hr>
+<!--recreate the following from with suitable elements & input types-->
+<form action="/server">
+  <h1>Registration  Form</h1>
+  <div><input type="text" placeholder="first name">
+    <input type="text" placeholder="last name"></div>
+  
+  <div>
+    <label for="gender"> pleaseselect gender</label>
+    <select name="gender" id="gender">
+      <option value="m">male</option>
+      <option value="f">female</option>
+      <option value="0">others</option>
+    </select>
+  </div>
+  <div>do you agree to all terms of service?
+   <input type="checkbox" id="tos_agree" name="tos_agree"> 
+   <label for="tos_agree">yes,i agree</label>
+  </div>
+  <button>register</button>
+  
 
+</form>
 
 
 </body>
