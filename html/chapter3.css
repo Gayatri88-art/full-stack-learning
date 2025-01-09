@@ -1,16 +1,30 @@
- div {
-  height:200px;
-  width:500px;
-  background-color: rgb(230, 55, 84);
-  /*border-width: 2px;
+/* Style for the <div> element */
+div {
+  height: 200px;
+  width: 500px;
+  background-color: rgb(230, 55, 84); /* Red background */
+  border: 2px dotted aliceblue;
+  border-right-color: black; /* Changes the left border to black */
+  border-right-style: dotted; /* Ensures the left border style is double */
+
+  /* Uncomment if needed:
+  border-width: 2px;
   border-style: double;
-  color: aliceblue;*/
-  border:2px dotted aliceblue
- }
- h1{
+  color: aliceblue;
+  */
+
+   /* Adds a dotted border */
+}
+
+/* Style for the <h1> element */
+h1 {
+  border: 2px double green; /* Adds a double green border around */
+  border-left-color: black; /* Changes the left border to black */
+  border-left-style: dashed; /* Ensures the left border style is double */
+
+  /* Uncomment if needed:
   border-color: rgb(137, 227, 1);
   border-style: dashed;
- }
-
- /*  border shorthand 
-   order-->> width -style-color *?
+  border-width: 2px;
+  */
+}
