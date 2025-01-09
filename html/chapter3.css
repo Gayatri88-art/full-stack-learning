@@ -1,3 +1,16 @@
  div {
   height:200px;
+  width:500px;
+  background-color: rgb(230, 55, 84);
+  /*border-width: 2px;
+  border-style: double;
+  color: aliceblue;*/
+  border:2px dotted aliceblue
  }
+ h1{
+  border-color: rgb(137, 227, 1);
+  border-style: dashed;
+ }
+
+ /*  border shorthand 
+   order-->> width -style-color *?
