@@ -37,6 +37,7 @@ span{
   border: 5px dotted black;
   margin: 20px 1em 40px 2em;
   padding: 1em;
+  
   }
 
   .box {height: 100px;
@@ -45,8 +46,37 @@ span{
     border: 2px solid black;
     border-radius: 50%;
     display: inline-block;
+    transition-timing-function: ;
     }
 
     li {
       display: inline;
       }
+  .box:hover{
+        background-color: black;
+        border-radius: 20%;
+      }
+
+  .color{
+    background-color: rgba(207, 34, 15, 0.4);
+    height:200px;
+    color: aliceblue;
+    width:200px;
+    margin:10px;
+    transition-duration: 1s;
+    
+    margin:0 auto;
+  }
+  .color:hover{
+    background-color: black;
+    margin-top:50px;
+    
+
+  }
+  .opacity{
+    opacity: 0.4;
+    background-color: red;
+    height:50px;
+    width:50px;
+  }
+
