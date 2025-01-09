@@ -6,7 +6,7 @@ div {
   border: 2px dotted aliceblue;
   border-right-color: black; /* Changes the left border to black */
   border-right-style: dotted; /* Ensures the left border style is double */
-
+border-radius: 10px;
   /* Uncomment if needed:
   border-width: 2px;
   border-style: double;
