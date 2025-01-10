@@ -51,6 +51,7 @@ div:nth-of-type(3n) {
  }
  #five {
   transform: rotate(30deg) skew(50deg) scale(0.5);
+ position: fixed;
  }
  .newone{
   background-image: url(newone.png);
