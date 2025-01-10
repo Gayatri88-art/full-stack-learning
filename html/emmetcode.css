@@ -1,13 +1,66 @@
-#ok{
-  height: 50px;
-  width:200px;
-  background-color: rgb(248, 32, 13);
-  margin: 0 auto;
-  margin-top:10px;
-  transition: margin-top 2s ease-in-out 0.2s;
+.gargi{
+  height:100px;
+  width:100px;
+  background-color: rgb(3, 232, 3);
+  transition:margin-top 2s ease 0.2s;
+  margin-bottom: 100px;
+  margin-left: 40px;
+
 
 }
-#ok:hover{
-background-color: yellow;
-margin-top: 400px;
+.gargi:hover{
+  background-color: red;
+  margin-top:400px;
+  transform: rotate(180deg);
+  transform: scale(2);
 }
+
+
+section {
+margin-top: 100px;
+
+}
+div {
+  width:200px;
+  height:50px;
+  text-align: center;
+  background-color:green;
+  margin-bottom: 20px;
+}
+
+div:nth-of-type(2n) {
+  background-color: rgba(9, 5, 219, 0.919);
+}
+div:nth-of-type(3n) {
+  background-color: red;
+}
+
+/* tranform */
+ #one {
+  transform: rotate(180deg);
+  box-shadow: 2px 2px 8px yellow;
+ }
+ #two {
+  transform: scale(0.5);
+ }
+ #three {
+  transform: translate(100px);
+ }
+ #four {
+  transform: skew(-30deg);
+ }
+ #five {
+  transform: rotate(30deg) skew(50deg) scale(0.5);
+ }
+ .newone{
+  background-image: url(newone.png);
+  background-size: cover;
+  height: 200px;
+  width:400px;
+  font-weight:bolder ;
+  font-size: 30px;
+ }
+ .newone:hover{
+  border-radius: 10% 30% 50% 70%;
+
+ }
