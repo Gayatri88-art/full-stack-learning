@@ -1,0 +1,22 @@
+#cards{
+  height: 300px;
+  width: 80%;
+  display: flex;
+  
+  border: 2px solid black;
+  margin:100px auto;
+  flex-direction: row-reverse ;
+  justify-content: space-evenly;
+  justify-content: baseline;
+  align-items: flex-end;
+ /* flex-wrap: wrap-reverse;*/
+}
+#cards div {
+  height: 100px;
+  width: 300px;
+  text-align: center ;
+
+}
+#yellow {
+height:500px;
+}
