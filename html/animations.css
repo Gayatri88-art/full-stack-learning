@@ -1,0 +1,64 @@
+.box{
+  width:300px;
+  height:100px;
+background-color:  rgb(244, 4, 92);
+animation-name:fontanimation,coloranimation,widthanimation;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+margin-bottom: 30px;
+}
+.box2{
+  width:300px;
+  height:100px;
+  animation-name:percentanimation;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+@keyframes fontanimation {
+  from{
+     font-size:20px;
+     color: blueviolet;
+
+  }
+  to{
+    font-size:40px;
+    color: white;
+  }
+  
+
+}
+@keyframes coloranimation {
+  from { background-color: green;}
+  to{ background-color: yellowgreen;}
+}
+
+@keyframes widthanimation {
+  from { width:300px;}
+  to{ width:600px;}
+}
+@keyframes percentanimation {
+  0%{
+    background-color: yellowgreen;
+ 
+  }
+  25%{
+    background-color: rgb(50, 205, 86);
+ 
+  }
+  50%{
+    background-color: rgb(50, 179, 205);
+ 
+  }
+  100%{
+    background-color: rgb(78, 50, 205);
+ 
+  }
+
+}
