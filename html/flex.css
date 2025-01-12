@@ -9,6 +9,7 @@
   justify-content: space-evenly;
   justify-content: baseline;
   align-items: flex-end;
+  
  /* flex-wrap: wrap-reverse;*/
 }
 #cards div {
@@ -18,5 +19,6 @@
 
 }
 #yellow {
-height:500px;
+align-self: center;
+flex-shrink: 1;
 }
