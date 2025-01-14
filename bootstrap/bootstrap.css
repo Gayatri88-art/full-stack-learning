@@ -1,6 +1,12 @@
 .container-md{
-  background-color: yellow;
+  background-color: rgb(233, 246, 245);
 }
 .btn-primary{
   background-color: yellowgreen;
+}
+.bg-danger{
+  
+  font-size: 15px;
+  text-align: center;
+
 }
