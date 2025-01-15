@@ -34,12 +34,17 @@
     <div class="container">
       <h3>form demo</h3>
       <form  class="mb-3">
-        <label  for="email" class="form-label">email</label>
+        <div class="row">
+          <label  for="email" class=" mb-3 col">email</label>
       <input type="text" id="email" class="form-control" placeholder="email">
-      <label  for="password" class="form-label">password</label>
+
+      <label  for="password" class=" mb-3 col">password</label>
       <input type="password" id="password" class="form-control" placeholder="password">
-      <label  for="address" class="form-label">address</label>
-      <input type="text" id="address" class="form-control-lg" placeholder="address">
+
+      
+        </div>
+     
+      
       </form>
     </div>
     
@@ -51,6 +56,26 @@
         <option value="3">pune</option>
         <option value="4">nashik</option>
         </select>
+        
+
+        <div class="mb-3 form-check">
+          <label  class="form-check-label"for="input">input</label>
+          <input  class="form-check-input"type="checkbox" placeholder="input"  id="input">
+
+          
+        </div>
+
+        <div class="mb-3 form-check">
+          <label  class="form-check-label"for="radiobs">radiobs</label>
+          <input  class="form-check-input"type="radio" placeholder="radiobs"  id="radiobs">
+
+          
+        </div>
+        <div class="form-check form-switch mb-3">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+      
       
     </div>
      
