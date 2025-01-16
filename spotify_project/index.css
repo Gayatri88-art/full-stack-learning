@@ -116,6 +116,38 @@ width:1.25rem;
   color: rgb(4, 4, 4);
   padding:4px 16px;
   margin:8px;
-  height:32px;
+  height:40px;
   width:fit-content
+}
+.sticky-nav{
+  background-color: #121212;
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 0 1rem;
+}
+.sticky-nav-icons{
+margin-left:0.75rem;
+
+}
+.sticky-nav-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:40px;
+
+}
+.nav-items{
+  margin-left: 1.5rem;
+}
+.dark-badge{
+  background-color: #000;
+  color:#ffffff;
+}
+@media (max-width:1000px){
+  .hide{
+    display: none;
+  }
 }
