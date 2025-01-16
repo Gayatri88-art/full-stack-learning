@@ -192,3 +192,30 @@ h2{
   border-top: 1px solid white;
   opacity: 0.4;
 }
+
+
+.music-player {
+  background-color: black;
+  height: 76px;
+  position: absolute; /* Change to absolute */
+  bottom: 0;
+  left: 0; /* Align to the left edge */
+  width: calc(100% - 0.5rem); /* Account for the .main padding */
+  display: flex;
+  border-radius: 0 0 1rem 1rem; /* Optional: Match the sidebar rounding */
+}
+
+
+.album{
+  width:30%;
+  background-color: chartreuse;
+}
+
+.playback-bar{
+width:100%;
+background-color: brown;
+}
+.controls{
+width:30%;
+background-color: aqua;
+}
