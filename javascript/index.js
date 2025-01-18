@@ -176,6 +176,12 @@ let msg = "welcome" + firstname  ;
 alert(msg);
 
 
+//string operations
+
+
+
+
+
 
 
 
