@@ -9,3 +9,16 @@ let msg = "Error";
 console.log( msg.toUpperCase() );
 console.log( msg.toLowerCase() );
 
+let note ="ILovewebdev";
+console.log( note.indexOf("Love"));
+
+let boy = "  Tejas  ";
+// let newboy = boy.trim();
+// console.log("after trim",newboy);
+//  newboy = newboy.toLowerCase();
+//  console.log( "after touppercase",newboy);
+
+let newboy = boy.trim().toUpperCase();
+console.log(newboy);
+
+
