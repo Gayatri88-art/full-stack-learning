@@ -21,4 +21,23 @@ let boy = "  Tejas  ";
 let newboy = boy.trim().toUpperCase();
 console.log(newboy);
 
+//slice
+
+let learn = "withapnaclg"
+console.log(learn.slice(4,8));
+
+let person = "goodboy"; ///replacing perticular word or letter.
+update = person.replace("good","bad");
+console.log(update);
+
+let fruit = "mango";
+x = fruit.repeat(3);
+console.log(x);
+
+
+
+
+
+
+
 
