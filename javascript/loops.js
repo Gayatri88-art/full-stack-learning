@@ -44,7 +44,11 @@ while(i<=15){
 
 const favmovie = "vivah";
 let guess = prompt("enter my favmovies name:-");
-while((guess!="vivah")&&(guess!= "quit")){
+while(guess!="vivah"){
+  if(guess=="quit"){
+    console.log("you quit");
+    break;
+  }
     guess = prompt("wront! please try again");
 }
 if(guess==favmovie){
