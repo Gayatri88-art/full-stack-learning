@@ -35,3 +35,18 @@ for(let i=1;i<=5;i++){
     console.log(j);
   }
 }
+
+let i = 1; //white loop
+while(i<=15){
+  console.log(i);
+  i++;
+}
+
+const favmovie = "vivah";
+let guess = prompt("enter my favmovies name:-");
+while((guess!="vivah")&&(guess!= "quit")){
+    guess = prompt("wront! please try again");
+}
+if(guess==favmovie){
+  console.log("congrats!");
+}
