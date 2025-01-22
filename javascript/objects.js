@@ -28,26 +28,55 @@
  delete list.name;
 
 
- const stu_info = {
-  gayatri: {
+//  const stu_info = {
+//   gayatri: {
+//     age:20,
+//     grade:"A",
+//   },
+//   sahil: {
+//     age:20,
+//     grade:"o",
+//   },
+//   mayuri: {
+//     age:20,
+//     grade:"o",
+//   },
+//   sanika: {
+//     age:20,
+//     grade:"A+",
+//   },
+//  }
+//  console.log(stu_info);
+ 
+ 
+//  console.log(stu_info.gayatri);
+//  console.log( delete stu_info.gayatri.age);
+
+const stu_info = [
+
+  {name:"gayatri",
     age:20,
     grade:"A",
   },
-  sahil: {
+   {name:"sahil",
     age:20,
     grade:"o",
   },
-  mayuri: {
+   {name:"mayuri",
     age:20,
     grade:"o",
   },
-  sanika: {
+  {name:"sanika",
     age:20,
     grade:"A+",
   },
- }
+]
  console.log(stu_info);
- 
- 
- console.log(stu_info.gayatri);
- console.log( delete stu_info.gayatri.age);
+ console.log(stu_info[0].name = "gargi");
+ console.log(stu_info[2].gender = "female");
+ console.log(stu_info[2]);
+
+
+
+
+
