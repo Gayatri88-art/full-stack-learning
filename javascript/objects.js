@@ -76,6 +76,17 @@ const stu_info = [
  console.log(stu_info[2].gender = "female");
  console.log(stu_info[2]);
 
+ //math objects
+ 
+ console.log(Math.PI);
+ console.log(Math.E);
+ console.log(Math.random());
+ console.log(Math.abs(-5));
+ console.log(Math.pow(2,3));
+ console.log(Math.floor(5.555));
+ console.log(Math.ceil(5.77));
+
+
 
 
 
