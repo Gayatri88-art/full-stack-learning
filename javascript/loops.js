@@ -54,3 +54,28 @@ while(guess!="vivah"){
 if(guess==favmovie){
   console.log("congrats!");
 }
+
+let fruits = ["apple","banana","fig","coconut","pineapple"];
+
+for( let n=0;n<fruits.length; n++){
+  console.log(n,fruits[n]);
+}
+
+let heroes =[["ganesh","suresh","ramesh"],["ruma","uma","soma"]];
+for(let a =0;a<heroes.length;a++){
+  console.log(a,heroes[a],heroes[a].length);
+  for(let b =0;b<heroes[a].length;b++){
+    console.log(`j=${b},${heroes[a][b]}`);
+  }
+}
+
+
+let animals = ["cow","ox","horse","peacock"]; //aaray ke individual items ko acces karna hai toh we use "for of loop"
+for(animal of animals){
+  console.log(animal);
+}
+
+let name = "gayatri";
+for (char of name){
+  console.log(char);
+}
