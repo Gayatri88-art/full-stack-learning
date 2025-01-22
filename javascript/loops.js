@@ -79,3 +79,10 @@ let name = "gayatri";
 for (char of name){
   console.log(char);
 }
+
+let city = [["mumbai","puna","nagpur","nashik"],["jalgaon","neri","jamner","parola"]];
+for(list of city){
+   for(village of list){
+    console.log(village);
+  }
+}
