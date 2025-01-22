@@ -86,6 +86,9 @@ const stu_info = [
  console.log(Math.floor(5.555));
  console.log(Math.ceil(5.77));
 
+ let random = Math.floor(Math.random()*10)+1; // put 100 on the place of 10 if u want numbers bet 1 to 100
+ console.log(random);
+ console.log(Math.floor(Math.random()*5)+20);
 
 
 
