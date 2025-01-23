@@ -160,3 +160,29 @@ const calculator = {
   }
  
 }
+
+//this in js
+const students = {
+  name:"sahil",
+  age:20,
+  city:"mumbai",
+  eng:98,
+  math:96,
+  chem:99,
+  getavg(){
+    console.log(this);
+     let avg = (this.eng+this.math+this.chem)/2;
+     console.log(avg);
+  }
+
+}
+ function getavg(){
+  console.log(this);
+ }
+
+ try {
+  console.log(a);
+ }catch (err){
+  console.log("variable doesnt exist");
+  console.log(err);
+ }
