@@ -207,3 +207,20 @@ const cube = (n) =>(n*n*n); //implicite way
  };
 
  const multi = (a,b) => (a*b);
+
+
+ console.log("hiiiii there!");
+ setTimeout( ()=>{
+  console.log("apna college");
+ },4000);
+ console.log("welcome to");
+
+
+
+ //setinterval
+ console.log("hiiiiiiiii guzzzzzzzzzzzzzzzzzzzzzzzzzs");
+ let id = setInterval( () =>{
+  console.log("Building the future, from front to back 🚀💻 #FullStackDeveloper #CodeWithPassion");
+ },4000);
+ console.log("my self gagri");
+ clearInterval(id); //this cammand stop the execution.
