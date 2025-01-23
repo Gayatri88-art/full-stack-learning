@@ -186,3 +186,24 @@ const students = {
   console.log("variable doesnt exist");
   console.log(err);
  }
+
+ //array function
+ const addition = (a,b) =>{
+  console.log(a+b);
+ };
+
+//  const cube = (n) =>{
+//   console.log(n*n*n);
+//  };
+
+const cube = (n) =>(n*n*n); //implicite way
+
+ const power = (a,b) =>{
+  console.log(a**b);
+ };
+
+ const hellow = ()=>{
+  console.log("hello world");
+ };
+
+ const multi = (a,b) => (a*b);
