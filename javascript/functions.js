@@ -100,4 +100,63 @@ function concat(str){
 
 //function scope-->variable difine in the function is not accesible from the outside
 //block scope-->
+  
 
+//function expression
+let sum= function(a,b){
+  return a+b;
+
+}
+
+//function higher order
+
+function  multiplegreet (func,n){
+  for(let i = 1; i<=n; i++){
+    func();
+  }
+}
+let greet = function(){
+  console.log("hello");
+}
+multiplegreet(greet,10);
+
+
+
+function oddeventest(request){
+  if(request=="odd"){
+    return function(n){
+      console.log(!(n%2==o));
+    }
+    return odd;
+  }
+  else if(request=="even"){
+    return function(n){
+      console.log((n%2==o));
+    }
+    return even;
+  }
+   
+  else{
+    console.log("wrong request");
+  }
+}
+let request = "odd";
+
+
+//const calculator
+const calculator = {
+  sum: function(a,b){
+    return a+b;
+  },
+  
+  sub: function(a,b){
+    return a-b;
+  },
+  mul:function(a,b){
+    return a*b;
+  },
+  div: function(a,b){
+    return a/b;
+  }
+ 
+}
