@@ -46,3 +46,58 @@ rolldice();
 rolldice();
 rolldice();
 
+function calculate(a,b){
+  console.log(" sum of the num is-", a+b);
+}
+calculate(23,10);
+
+
+
+//avg of the number
+function avg(a,b,c){
+  console.log(" avarage of the num is-", (a+b+c)/2);
+}
+avg(1,2,3);
+
+function multable(n){
+  for(let i =n; i<=n*10;i=i+n)
+  console.log(i);
+}
+multable(20);
+
+
+function age(n){
+  if (n>18){
+    return "adult";
+  }
+  else{
+    return"not adult";
+  }
+  
+}
+age(23);
+
+
+//sum oof n num
+function getsum(n){
+  let sum=0;
+for (let j=1;j<=n;j++){
+sum+=j;
+}
+return sum;
+}
+
+//concate string
+
+let str =["hi","my","self","gargi"];
+function concat(str){
+  let result = "";
+  for (i=0; i<=str.length;i++){
+    result+=str[i];
+  }
+  return result;
+}
+
+//function scope-->variable difine in the function is not accesible from the outside
+//block scope-->
+
