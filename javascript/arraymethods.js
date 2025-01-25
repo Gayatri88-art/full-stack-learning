@@ -124,6 +124,11 @@ const data ={
 let copydata = {...data};
 console.log(copydata);
 
+//destructuring -->> storing value of array in multiple variable
+let name = ["gayatri","varade","tejas","liladhar","laxmi"];
+let [first,second,...others] =  name;
+console.log(first);
+
 
 
 
