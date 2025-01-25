@@ -224,3 +224,6 @@ const cube = (n) =>(n*n*n); //implicite way
  },4000);
  console.log("my self gagri");
  clearInterval(id); //this cammand stop the execution.
+
+ // this with arrow functions
+   
