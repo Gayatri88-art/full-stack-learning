@@ -124,10 +124,26 @@ const data ={
 let copydata = {...data};
 console.log(copydata);
 
-//destructuring -->> storing value of array in multiple variable
+//destructuring arrays-->> storing value of array in multiple variable
 let name = ["gayatri","varade","tejas","liladhar","laxmi"];
 let [first,second,...others] =  name;
-console.log(first);
+console.log(others);
+
+////destructuring objects
+
+const student = {
+  name:"gargi",
+  age:20,
+  city:"jalgaon",
+  clg:"rcp",
+  marks:98,
+  username:"@gargi",
+  password:123,
+};
+
+let {username:user,password:key}= student;
+
+
 
 
 
