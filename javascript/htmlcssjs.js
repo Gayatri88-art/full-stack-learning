@@ -22,3 +22,11 @@ console.log(para.innertext = "abcd"); //now it will visible on the screen.
 let heading =document.querySelector('h1');
 heading.innerText;
 heading.innerHTML = "<u>Welcome to My Webpage </u>";
+
+
+
+let picturs = document.querySelector('img');
+picturs;
+picturs.getAttribute('id');
+picturs.setAttribute('id','dharal');
+picturs.getAttribute('id');
