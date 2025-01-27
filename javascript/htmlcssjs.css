@@ -4,6 +4,10 @@ body {
   padding: 0;
   background-color: #f9f9f9;
 }
+.green{
+  color: green;
+  text-decoration: underline wavy black;
+}
 
 .container {
   max-width: 800px;
