@@ -116,7 +116,8 @@ console.dir(fox);
 fox.innerText = "NEW BUTTON !!!";
 let z =document.querySelector('.box');
 z.insertAdjacentElement('beforebegin',fox);
-z.insertAdjacentElement('afterbegin',fox);
+z.insertAdjacentElement('afterbegin',fox);<btn>​NEW BUTTON !!!​</btn>​
+
 z.insertAdjacentElement('beforeend',fox);
 z.insertAdjacentElement('afterend',fox);
 
