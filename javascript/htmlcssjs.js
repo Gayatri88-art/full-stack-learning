@@ -70,6 +70,7 @@ heading.classList.toggle("underline");//asel tar kadhun takel ani nasel tar add 
 
 
 
+//navigation
 
 
 
