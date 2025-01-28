@@ -52,3 +52,34 @@ body {
 .links-list a:hover {
   color: #0056b3;
 }
+
+/* styles.css */
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.headline {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 8px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

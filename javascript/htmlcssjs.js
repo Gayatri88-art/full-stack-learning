@@ -71,6 +71,56 @@ heading.classList.toggle("underline");//asel tar kadhun takel ani nasel tar add 
 
 
 //navigation
+let h1 =document.querySelector('h1');
+
+h1.parentElement;
+    let box =document.querySelector('.container');
+
+box.children;
+    let ul =document.querySelector('ul');
+
+ul.parentElement;
+ul.children
+
+ul.children[1];
+ul.children[1].previousElementSibling;
+ul.children[1].nextElementSibling;
+let photo = document.querySelector('img');
+
+photo;
+photo.nextElementSibling.style.Color= "red";
+
+
+//adding elements on page
+let newc = document.createElement('newc');
+newc;
+console.dir('newc');
+newc.innerText = "my name is gargi";
+let boxies = document.querySelector('.box');
+boxies.appendChild(newc); //new line will be added to the box class div
+
+//btn
+let btn = document.createElement('btn');
+
+console.dir(btn);
+
+btn.innerText = "click me!";
+let newone= document.querySelector('.box');
+newone.appendChild(btn);
+newone.append("gargii");//append
+newone.prepend("pehele dikhega");//prepend
+
+
+let fox = document.createElement('btn');//insert adjacentelement
+console.dir(fox);
+fox.innerText = "NEW BUTTON !!!";
+let z =document.querySelector('.box');
+z.insertAdjacentElement('beforebegin',fox);
+z.insertAdjacentElement('afterbegin',fox);
+z.insertAdjacentElement('beforeend',fox);
+z.insertAdjacentElement('afterend',fox);
+
+
 
 
 
