@@ -1,15 +1,16 @@
 let btns = document.querySelectorAll("button");
-console.dir(btns);
+
 
 //onclick
 //onmouseenter
 for(btn of btns){
-  btn.onclick = sayhello;
-  btn.onmouseenter = function(){
-    console.log("you clicked a button");
+  // btn.onclick = sayhello;
+  btn.addEventListener("click",sayhello);
+  btn.addEventListener("click",sayname);
+  
   }
-  console.dir(btn);
-}
+  
+
 // btn.onclick = function(){
 //   alert("button was clicked");
 // };
@@ -17,7 +18,15 @@ for(btn of btns){
 function sayhello(){
   alert("hellow!!");
 };
+function sayname(){
+  alert("apna college!!");
+};
 
-//
+
+
+
+//addeventlistners
+
+
 
 
