@@ -67,11 +67,21 @@
 // });
 
 
+
+//extracting data from forms
 let form = document.querySelector("form");
 form.addEventListener("submit", function(event){
- event.preventDefault();
-  alert("form submitted");
+ event.preventDefault(); //because of this we are not gone on any link or address
+  let user = document.querySelector("#user");
+  let pass = document.querySelector("#pass");
+  console.log(user.value);
+  console.log(pass.value);
+
+  alert(` hi ${user.value} your passsword is ${pass.value}`);
+ //we use value to get inner text written in the forms
 });
 
+
+ 
 
 
