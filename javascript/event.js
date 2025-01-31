@@ -82,6 +82,28 @@ form.addEventListener("submit", function(event){
 });
 
 
+let user = document.querySelector("#user");
+user.addEventListener("change",function(){
+  console.log("changed event");
+  console.log("finalvalue=",this.value);
+});
+
+user.addEventListener("input",function(){
+  console.log("input events");
+  console.log("finalvalue=",this.value);
+});
+
+let inp = document.querySelector("#text");
+let p = document.querySelector("p");
+
+inp.addEventListener("input",function(){
+  console.log(inp.value);
+  p.innerText = inp.value;
+
+
+});
+
+
  
 
 
