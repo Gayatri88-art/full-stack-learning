@@ -51,19 +51,26 @@
 //   console.log("key was released");
 // });
 
-let inp = document.querySelector("input");
-inp.addEventListener("keydown",function(event){
-  console.log("code =",event.code); //ArrowUp(keyU),ArrowDown(keyD),Arrowleft(keyL),Arrowright(keyR).
-  if (event.code == "KeyU"){
-    console.log("charecter move towards upward");
-  } else if (event.code == "KeyD"){
-    console.log("charecter move towards down");
-  }else if (event.code == "KeyL"){
-    console.log("charecter move towards left");
-  }else if (event.code == "KeyR"){
-    console.log("charecter move towards right");
-  }
+// let inp = document.querySelector("input");
+// inp.addEventListener("keydown",function(event){
+//   console.log("code =",event.code); //ArrowUp(keyU),ArrowDown(keyD),Arrowleft(keyL),Arrowright(keyR).
+//   if (event.code == "KeyU"){
+//     console.log("charecter move towards upward");
+//   } else if (event.code == "KeyD"){
+//     console.log("charecter move towards down");
+//   }else if (event.code == "KeyL"){
+//     console.log("charecter move towards left");
+//   }else if (event.code == "KeyR"){
+//     console.log("charecter move towards right");
+//   }
 
+// });
+
+
+let form = document.querySelector("form");
+form.addEventListener("submit", function(event){
+ event.preventDefault();
+  alert("form submitted");
 });
 
 
