@@ -95,5 +95,23 @@ function savetoDb(data){
 
 
 
+// then() catch() method -->> promises ke hi ye 2 method hai
+//consition fulfill hone ke baad-->>then()
+//otherwise -->>catch()
+
+savetoDb("apna college")
+  .then(()=>{
+    console.log("promise was accepted");
+    
+  })
+  .catch(()=>{
+    console.log("promise was rejected");
+    
+  });
+
+
+
+
+
 
 
