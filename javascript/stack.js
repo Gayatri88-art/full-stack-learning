@@ -41,7 +41,7 @@
 
 //the promises object represent the eventual completion or failure od asyncronous operation and its resultion value.
 //following code create confusion so that to overcome this we have another method which was implimented
-//refactoring with promises
+//refactoring with promises -->> or by promises chaining
 
 // function savetoDb(data,success,failure){
 //   let internetSpeed = Math.floor(Math.random()*10)+1;
@@ -99,11 +99,32 @@ function savetoDb(data){
 //consition fulfill hone ke baad-->>then()
 //otherwise -->>catch()
 
+// savetoDb("apna college")
+//   .then(()=>{
+//     console.log("promise was accepted");
+    
+//   })
+//   .catch(()=>{
+//     console.log("promise was rejected");
+    
+//   });
+
+//promise chainning-->> call hell se more readable hai ye method
+
 savetoDb("apna college")
   .then(()=>{
-    console.log("promise was accepted");
-    
+    console.log("promise1: was saved");
+    return savetoDb("gargii");
   })
+  .then(()=>{
+    console.log("promise2: was saved");
+    return savetoDb("gayatri");
+
+  })
+  .then(()=>{
+    console.log("promise3: was saved");
+  })
+
   .catch(()=>{
     console.log("promise was rejected");
     
