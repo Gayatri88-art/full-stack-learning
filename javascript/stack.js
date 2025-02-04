@@ -112,23 +112,36 @@ function savetoDb(data){
 //promise chainning-->> call hell se more readable hai ye method
 
 savetoDb("apna college")
-  .then(()=>{
+  .then((result)=>{
     console.log("promise1: was saved");
+    console.log("result of promise:",result);
+
     return savetoDb("gargii");
   })
-  .then(()=>{
+  .then((result)=>{
     console.log("promise2: was saved");
+    console.log("result of promise:",result);
+ 
     return savetoDb("gayatri");
-
+    
   })
-  .then(()=>{
+  .then((result)=>{
     console.log("promise3: was saved");
+    console.log("result of promise:",result);
   })
 
-  .catch(()=>{
+  .catch((error)=>{
     console.log("promise was rejected");
+    console.log("result of promise:",error);
+    
+
     
   });
+
+  //promises are reject or accepted with some data
+
+
+
 
 
 
