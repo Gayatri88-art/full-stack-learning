@@ -86,6 +86,13 @@ async function handlePromise() {
 
 handlePromise();
 
+//API-->> application programming interface
+//     -->>it return the data in the form of JSON
+
+
+//JSON-->>javascript object notation(www.json.org)<=== use this website for extra info
+
+
 
 
 
