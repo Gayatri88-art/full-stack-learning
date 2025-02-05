@@ -68,23 +68,23 @@
 
 
 //handing rejection  we use try{} and catch{}
-function mayFail() {
-  return new Promise((resolve, reject) => {
-      let success = Math.random() > 0.5; // 50% chance of success or failure
-      success ? resolve("Success!") : reject("Something went wrong!");
-  });
-}
+// function mayFail() {
+//   return new Promise((resolve, reject) => {
+//       let success = Math.random() > 0.5; // 50% chance of success or failure
+//       success ? resolve("Success!") : reject("Something went wrong!");
+//   });
+// }
 
-async function handlePromise() {
-  try {
-      let result = await mayFail();  // Wait for the promise
-      console.log(result);            // If it succeeds
-  } catch (error) {
-      console.error("Error:", error); // If it fails
-  }
-}
+// async function handlePromise() {
+//   try {
+//       let result = await mayFail();  // Wait for the promise
+//       console.log(result);            // If it succeeds
+//   } catch (error) {
+//       console.error("Error:", error); // If it fails
+//   }
+// }
 
-handlePromise();
+// handlePromise();
 
 //API-->> application programming interface
 //     -->>it return the data in the form of JSON
@@ -93,6 +93,14 @@ handlePromise();
 //JSON-->>javascript object notation(www.json.org)<=== use this website for extra info
 
 
+//JSON.parse <<== EK DATA data formate se dusre me jane ke lia ye function use karte hai
+             //to convert the string data into js object
+
+//JSON.stringify  <<== js object to json
+
+let jsonRes = '{"fact": "Cats have five toes on their front paws, but only four on their back paws.","length": 68}'
+let validRes =JSON.parse(jsonRes);
+console.log(validRes.fact);
 
 
 
