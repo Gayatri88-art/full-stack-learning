@@ -49,23 +49,39 @@ function colorchange(color,delay,nextcolor){
     },delay);
   });
 }
-colorchange("red",1000)
-.then(()=>{
-  console.log("red color was completed");
-  return colorchange("orange",1000);
-})
-.then(()=>{
-  console.log("orange color was completed");
-  return colorchange("green",1000);
-})
-.then(()=>{
-  console.log("green color was completed");
-  return colorchange("pink",1000);
-})
-.then(()=>{
-  console.log("pink color was completed");
+
+//above code using await function
+async function demo(){
+   await colorchange("red",1000);
+   await colorchange("orange",1000);
+  await colorchange("green",1000);
+  colorchange("pink",1000);
+
+
+
+}
+
+// colorchange("red",1000)
+// .then(()=>{
+//   console.log("red color was completed");
+//   return colorchange("orange",1000);
+// })
+// .then(()=>{
+//   console.log("orange color was completed");
+//   return colorchange("green",1000);
+// })
+// .then(()=>{
+//   console.log("green color was completed");
+//   return colorchange("pink",1000);
+// })
+// .then(()=>{
+//   console.log("pink color was completed");
   
-});
+// });
+
+
+
+
 
 
 
