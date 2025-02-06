@@ -98,9 +98,9 @@
 
 //JSON.stringify  <<== js object to json
 
-let jsonRes = '{"fact": "Cats have five toes on their front paws, but only four on their back paws.","length": 68}'
-let validRes =JSON.parse(jsonRes);
-console.log(validRes.fact);
+// let jsonRes = '{"fact": "Cats have five toes on their front paws, but only four on their back paws.","length": 68}'
+// let validRes =JSON.parse(jsonRes);
+// console.log(validRes.fact);
 
 
 
@@ -126,7 +126,29 @@ console.log(validRes.fact);
 //                 here q = key
 //                 value = harry porter
 
-//http headers ==>> header,value  
+//http headers ==>> header,value 
+
+let url= "https://catfact.ninja/fact";
+
+fetch(url)
+.then((res1)=>{
+  console.log(res1);
+  return res1.json();
+})
+.then((data)=>{
+  console.log("data1-",data.fact);
+})
+.then((res2)=>{
+  return res2.json(); 
+
+})
+.then((data2)=>{
+  console.log("data2-",data2.fact);
+})
+.catch((err)=>{
+  console.log("error-",err);
+});
+console.log("i am happy!!");
 
 
 
