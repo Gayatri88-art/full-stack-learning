@@ -104,4 +104,32 @@ console.log(validRes.fact);
 
 
 
+//testing API request in hoppscoch or postman 
+
+
+//Ajax-->>  asynchronous javascript and XML
+
+
+//http verbs -->> 1)get==> jab koe data ya info leni ho 
+//                   2)post ==> jab kuch data post karna ho ya bhejna ho
+//                   3)delete==>delete karna ho
+
+
+//status codes==> 404 -- page not found
+//                  400 -- bad request
+//                  200 -- ok everything is done succesfully
+//                  500 -- internal server error
+
+
+// add info in urls -->>
+//                 https://www.google.com/search?q=harry + porter
+//                 here q = key
+//                 value = harry porter
+
+//http headers ==>> header,value  
+
+
+
+
+
 
