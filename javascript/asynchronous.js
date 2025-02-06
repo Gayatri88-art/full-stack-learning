@@ -128,27 +128,43 @@
 
 //http headers ==>> header,value 
 
+// let url= "https://catfact.ninja/fact";
+
+// fetch(url)
+// .then((res1)=>{
+//   console.log(res1);
+//   return res1.json();
+// })
+// .then((data)=>{
+//   console.log("data1-",data.fact);
+// })
+// .then((res2)=>{
+//   return res2.json(); 
+
+// })
+// .then((data2)=>{
+//   console.log("data2-",data2.fact);
+// })
+// .catch((err)=>{
+//   console.log("error-",err);
+// });
+// console.log("i am happy!!");
+
 let url= "https://catfact.ninja/fact";
+async function getFacts(){
+  try{
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data.fact);
 
-fetch(url)
-.then((res1)=>{
-  console.log(res1);
-  return res1.json();
-})
-.then((data)=>{
-  console.log("data1-",data.fact);
-})
-.then((res2)=>{
-  return res2.json(); 
-
-})
-.then((data2)=>{
-  console.log("data2-",data2.fact);
-})
-.catch((err)=>{
-  console.log("error-",err);
-});
-console.log("i am happy!!");
+    let res2 = await fetch(url);
+    let data2 = await res2.json();
+    console.log(data2.fact);
+  }catch(e){
+    console.log("error-",e);
+  }
+  console.log("bye");
+}
 
 
 
