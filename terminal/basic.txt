@@ -1,0 +1,13 @@
+ls = list files (show my files)
+
+pwd = print working durectory(where am i?)
+
+clear = clear screen
+
+//nevigation commands
+
+cd = change directory  <<--directory me janeke lia
+cd directory_name
+cd ..                  <<-- directory se bahar aane ke lia
+
+
