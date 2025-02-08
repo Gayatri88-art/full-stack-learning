@@ -22,4 +22,11 @@ mkdir
 is u write man before any command u will get info about that command
 eg.man ls
 
+//touch command -->> is used to modify the file ka time but id file is not exist then it will create that file
+eg.touch index.html
+
+//deleting file and folders
+rm -->>removes files
+rmdir -->> removes empty files
+rm - rf -->>removes any folders
 
