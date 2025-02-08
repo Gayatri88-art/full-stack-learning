@@ -18,3 +18,8 @@ cd ..                  <<-- directory se bahar aane ke lia
 // making directories
 mkdir 
 
+//flags
+is u write man before any command u will get info about that command
+eg.man ls
+
+
