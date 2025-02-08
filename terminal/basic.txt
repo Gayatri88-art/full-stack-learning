@@ -4,10 +4,16 @@ pwd = print working durectory(where am i?)
 
 clear = clear screen
 
-//nevigation commands
+ //nevigation commands
 
 cd = change directory  <<--directory me janeke lia
 cd directory_name
 cd ..                  <<-- directory se bahar aane ke lia
+
+//path in nevigation -->>path 1)relative path
+                               2)absolute path <<== start with /
+/ <<== root directory
+~ <<== home directory
+
 
 
