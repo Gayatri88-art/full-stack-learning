@@ -1,1 +1,13 @@
-needhgbbm k
+git status -->>The git status command is used to show the current status of your local Git repository
+
+//add - adds new or changed files in your working directory to the git staging area
+git add file_name
+
+//commit - it is the record odf change
+git commit -m "some meggage"
+
+//push - uplod local repo content to remote repo
+git push origin main
+
+
+
