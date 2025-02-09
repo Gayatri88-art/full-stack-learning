@@ -31,6 +31,12 @@ git checkout -b <new_branch_name> (to create new branch)
 git branch -d <branch_name> (to delete branch)
 
 
+//marging code
+git diff branch_name (to compair commit branches,file and more)
+git merg file_name (to merg 2 files)
+create a PR (pull requet)
+
+
 
 
 
