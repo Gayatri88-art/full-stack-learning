@@ -23,7 +23,13 @@ git branch
 git branch -M main
 git push origin main
 
-//
+//branch commands
+git branch (to check branch)
+git branch -M main (to rename branch as main)
+git checkout  branch_name 
+git checkout -b <new_branch_name> (to create new branch)
+git branch -d <branch_name> (to delete branch)
+
 
 
 
