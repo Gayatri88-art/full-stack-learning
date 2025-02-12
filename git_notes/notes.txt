@@ -37,7 +37,6 @@ git merge file_name (to merg 2 files)
 create a PR (PR = pull requet)
 
 
-//merging branches
 
 
 
