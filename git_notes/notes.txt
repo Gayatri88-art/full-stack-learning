@@ -37,7 +37,73 @@ git merge file_name (to merg 2 files)
 create a PR (PR = pull requet)
 
 
+1️⃣ Pulling the Latest Changes (git pull)
+When working with a team, you need to update your local repo with the latest changes from GitHub.
 
+git pull origin main
+This fetches and merges the latest changes from the remote main branch into your local branch.
+
+2️⃣ Handling Merge Conflicts
+A merge conflict happens when two people edit the same part of a file.
+
+🔹 Steps to Fix a Merge Conflict:
+Pull the latest changes:
+
+git pull origin main
+If there’s a conflict, Git will show:
+
+CONFLICT (content): Merge conflict in <file>
+Open the conflicting file and look for:
+
+markdown
+
+<<<<<<< HEAD
+(Your changes)
+=======
+(Other changes from GitHub)
+>>>>>>> main
+Manually edit the file to keep the correct changes.
+Remove <<<<<<<, =======, and >>>>>>>.
+Mark the conflict as resolved:
+
+git add <file>
+git commit -m "Fixed merge conflict"
+Push the resolved changes:
+
+git push origin main
+3️⃣ Fixing Mistakes
+Undo the Last Commit (Before Pushing)
+
+git reset --soft HEAD~1
+This removes the last commit but keeps your changes. Now, you can fix things and re-commit.
+
+Undo a Committed File
+
+git checkout HEAD~1 <filename>
+This restores a file to how it was before the last commit.
+
+Revert a Pushed Commit
+
+git revert <commit-hash>
+git push origin main
+This creates a new commit that undoes the bad commit.
+
+4️⃣ What is Forking?
+Forking is when you copy someone else's GitHub repository to your own GitHub account.
+
+You can make changes independently without affecting the original repo.
+If you want your changes added to the original repo, you send a Pull Request (PR).
+🔹 How to Fork and Work on a Project:
+Fork a repo from GitHub (Click the "Fork" button on the top right).
+Clone it to your local machine:
+
+git clone https://github.com/your-username/repo-name.git
+Make changes and push them:
+
+git add .
+git commit -m "Your changes"
+git push origin main
+Create a Pull Request (PR) from your GitHub repo to the original repo.
 
 
 
