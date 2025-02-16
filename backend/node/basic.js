@@ -16,7 +16,7 @@ for(i=1; i<=5;i++){
   console.log("hellow",i);
 }
 console.log("bye!");
-console.log(process.argv);
+console.log(process.argv); //<<--by default ya madhe 2 value astat ek file chi location ani ek executable path for node
 
 //process in node
 //  this object provides information about, and control over the current Node.js ProcessingInstruction.
