@@ -33,3 +33,17 @@ for(i=2;i<args.length; i++ ){
   console.log("hello to ",args[i]);
 }
 //Useful for passing inputs when running scripts! 🎯
+
+// math.js madhe use lekele finction mala ya file meadhe use karayche aahe 
+// module.exports --<< a special object
+//require("./path likhna hota hai yaha") -->>a built in function to include external modules that exist in separate files
+
+const someValue = require("./math");
+console.log(someValue);
+
+const math = require("./math");
+console.log(math.sum(2,2));
+console.log(math.mul(2,2));
+console.log(math.g);
+console.log(math.PI);
+
