@@ -53,4 +53,11 @@ console.log(math.PI);
 const info = require("./export_in directories");
 console.log(info);
 
+//node package manager(npm)
+//1) library of packages
+//2)command line tool
+
+//install packages
+npm install 
+
 
