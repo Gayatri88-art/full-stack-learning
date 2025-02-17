@@ -60,6 +60,12 @@ console.log(info);
 // //install packages
 // npm install name
 
+// 1)node_modules – A folder that holds all the installed packages (like tools or libraries) for your project.
+
+// 2)package.json – A file that lists the names of the packages your project needs and some basic info about your project.
+// if our node modules get deleted by mistake we can install the exact version with the help of package.json using command (npm install)
+
+// 3)package-lock.json – A file that locks the exact versions of the packages you installed, so if someone else installs your project, they get the same versions.
 
 
 
