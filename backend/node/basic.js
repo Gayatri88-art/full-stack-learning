@@ -32,6 +32,7 @@ let args = process.argv;
 for(i=2;i<args.length; i++ ){
   console.log("hello to ",args[i]);
 }
+const fruits = require("./export_in directories");
 //Useful for passing inputs when running scripts! 🎯
 
 // math.js madhe use lekele finction mala ya file meadhe use karayche aahe 
@@ -46,4 +47,10 @@ console.log(math.sum(2,2));
 console.log(math.mul(2,2));
 console.log(math.g);
 console.log(math.PI);
+
+
+// dusri directory se info lene ke lia 
+const info = require("./export_in directories");
+console.log(info);
+
 
