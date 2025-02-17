@@ -57,7 +57,9 @@ console.log(info);
 //1) library of packages
 //2)command line tool
 
-//install packages
-npm install 
+// //install packages
+// npm install name
+
+
 
 
