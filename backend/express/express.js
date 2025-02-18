@@ -23,10 +23,18 @@
  let port = 3000;
  app.listen(port , ()=>{
   console.log(`app is listening on port ${port}`);
- })
+ });
 
-//  poer -->>A port in computer networking is a communication endpoint. It acts as a logical channel through which data is exchanged between devices over a network.
+ app.use((req,res)=>{
+  console.log("request recevied");
+  console.log(`app is listening on port ${port}`);
+});                              // for running this part u need to open  localhost:3000 on the browser at the same time
+
+
+
+//  poet -->>A port in computer networking is a communication endpoint. It acts as a logical channel through which data is exchanged between devices over a network.
 
 // Key Points:
 // Ports are identified by numbers (e.g., 80, 443, 3000).
 // Each port number is associated with a specific process or service.
+
