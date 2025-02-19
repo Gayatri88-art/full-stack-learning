@@ -27,7 +27,7 @@
  });
 
  app.get("/",(req,res)=>{
-  res.send("you contacted rootpath");
+  res.send("hiii i am your rootpath");
 });
 
 app.get("/apple",(req,res)=>{
@@ -73,3 +73,7 @@ app.post("/",(req,res)=>{
 
 //app.get (GET is used to retrieve data from the server.)
 
+
+
+//Nodemon -->> to automatically restart server with code changes
+//npm install -g nodemon 
