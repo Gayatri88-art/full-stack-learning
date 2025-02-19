@@ -21,21 +21,47 @@
  const app = express();
  
  let port = 3000;
+
  app.listen(port , ()=>{
   console.log(`app is listening on port ${port}`);
  });
 
- app.use((req,res)=>{
-  console.log("request recevied");
-  console.log(`app is listening on port ${port}`);
+ app.get("/",(req,res)=>{
+  res.send("you contacted rootpath");
+});
+
+app.get("/apple",(req,res)=>{
+  res.send("you contacted  apple path");
+});
+app.get("/banana",(req,res)=>{
+  res.send("you contacted  banana path");
+});
+app.get("/carry",(req,res)=>{
+  res.send("you contacted  carry path");
+});
+app.get("*",(req,res)=>{
+  res.send("path  doesnot exist"); //it will help you to reach requires page means all of them
+});
+
+
+//app.send (POST is used to send data to the server)
+app.post("/",(req,res)=>{
+  res.send("you sent a post request");
+});
+
+
+
+//  app.use((req,res)=>{
+//   console.log("request recevied");
+//   console.log(`app is listening on port ${port}`);
 
   // res.send({
   //   name:"apple",
   //   color:"red",
   // });
-  let code =" <h1>List of Fruits</h1><ul><li>Apple</li><li>Banana</li></ul>";
-  res.send(code)
-});                              // for running this part u need to open  localhost:3000 on the browser at the same time
+  // let code =" <h1>List of Fruits</h1><ul><li>Apple</li><li>Banana</li></ul>";
+  // res.send(code)
+// });                              // for running this part u need to open  localhost:3000 on the browser at the same time
 
 
 
@@ -44,4 +70,6 @@
 // Key Points:
 // Ports are identified by numbers (e.g., 80, 443, 3000).
 // Each port number is associated with a specific process or service.
+
+//app.get (GET is used to retrieve data from the server.)
 
