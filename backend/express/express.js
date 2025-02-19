@@ -77,12 +77,14 @@ app.post("/",(req,res)=>{
 
 //Nodemon -->> to automatically restart server with code changes
 //npm install -g nodemon 
-//nodemon index.js
+//nodemon current_file_name
 
 
 // path parameters
 app.get("/:username/:id", (req, res) => {
-  let { username, id } = req.params; // Correct destructuring
-  let htmlstr = `<h1>Welcome to the page of @${username}! Your ID is ${id}.</h1>`;
+  let { username, password } = req.params; // Correct destructuring
+  let htmlstr = `<h1>Welcome to the page of @${username}! Your ID is ${password}.</h1>`;
   res.send(htmlstr);
 });
+
+
