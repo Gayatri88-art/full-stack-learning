@@ -18,3 +18,6 @@ app.listen(port,()=>{
 
 //as we globally install nodemon
 //nodemon index.js
+
+
+//interpolation syntax
