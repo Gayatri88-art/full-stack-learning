@@ -21,5 +21,5 @@ app.listen(port,()=>{
 
 
 //interpolation syntax
-//syntax
-day-31
+//interpolation  refers to the embeddiing expression into marked up text
+//ejs.co --<< for more informations
