@@ -9,5 +9,11 @@
   <h2>this page belongs to @<%= username %></h2>
   <button>follow</button>
   <button>message</button>
+  <h2>accounts that folloe you:</h2>
+  <ul>
+    <% for(let name of followers){ %>
+      <li><%= name%></li>
+     <% }%>
+  </ul>
 </body>
 </html>
