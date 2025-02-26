@@ -11,6 +11,11 @@ app.get("/",(req,res)=>{
   res.render("home.ejs"); // render is useful to send files on server
 }); 
 
+app.get("/rolldice",(req,res)=>{
+  let num = Math.floor(Math.random()*6)+1
+  res.render("rolldice",{num}); // render is useful to send files on server
+}); 
+
 app.listen(port,()=>{
   console.log(`listening on port ${port}`)
 });
@@ -23,6 +28,7 @@ app.listen(port,()=>{
 //interpolation syntax
 //interpolation  refers to the embeddiing expression into marked up text
 //ejs.co --<< for more informations
+
 
 
 
