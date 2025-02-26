@@ -12,15 +12,25 @@ app.get("/",(req,res)=>{
 }); 
 
 app.get("/ig/:username",(req,res)=>{
-  const followers = ["gayatri","gargi","sahil","tejas"];
   let {username} = req.params;
-  res.render("instagram.ejs",{username,followers});
+  const instaData = require("./data.json");
+  const data = instaData[username]
+console.log(data);
+  res.render("instagram.ejs",{ data});
+  if(data){
+    res.render("instagram.ejs",{data});
+  }else
+  {
+    res.render("error.ejs");
+  }
+
+  
 })
 
 app.get("/rolldice",(req,res)=>{
   let num = Math.floor(Math.random()*6)+1
   res.render("rolldice",{num}); // render is useful to send files on server
-}); 
+});   
 
 app.listen(port,()=>{
   console.log(`listening on port ${port}`)
