@@ -60,17 +60,51 @@ app.listen(port,()=>{
 // the constructor method is a special method of a class for creating and initialising
 // AN objects instance of that class
 
-class Person{
-  constructor(name,age){
-    this.name = name;
-    this.age = age;
-    }
-  talk(){
-    console.log(`Hi, my name is ${this.name}`);
-  }
-}
-let p1 = new Person("gargi",20);
-let p2 = new Person("monu",21);
+
+//==>> inheritance 
+// class Person{
+//   constructor(name,age){
+//     this.name = name;
+//     this.age = age;
+//     }
+//   talk(){
+//     console.log(`Hi, my name is ${this.name}`);
+//   }
+// }
+// let p1 = new Person("gargi",20);
+// let p2 = new Person("monu",21);
+
+// class Person {
+//   constructor(name,age){
+//     console.log("person class constructor");
+//     this.name = name;
+//     this.age = age;
+//   }
+//   talk(){
+//     console.log(`hi, i am ${this.name}`);
+//   }
+// }
+// class Student extends Person{ //we use extends and parent class name
+//   constructor(name,age,marks){
+//     console.log("student class constructor");
+//     super(name,age); //parent class constructor is being called
+//     this.marks = marks;
+
+//   }
+// }
+// class Teacher extends Person{
+//   constructor(name,age,subject){
+//     console.log("teacher class constructor");
+//     super(name,age); //parent class constructor is being called
+//     this.subject = subject;
+
+//   }
+// }
+// let t1 = new Teacher("tejas",24,"dbms");
+// console.log(t1);
+// let s1 = new Student("gargi",20,90);
+// console.log(s1);
+
 
 
 
