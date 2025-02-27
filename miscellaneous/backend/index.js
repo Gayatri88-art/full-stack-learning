@@ -40,3 +40,4 @@ app.listen(port,()=>{
 // It contains built-in string methods like .toUpperCase(), .trim(), .split(), etc.
 // Example:
 // console.log(String.prototype.toUpperCase); 
+
