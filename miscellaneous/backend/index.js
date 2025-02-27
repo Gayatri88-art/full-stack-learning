@@ -41,3 +41,4 @@ app.listen(port,()=>{
 // Example:
 // console.log(String.prototype.toUpperCase); 
 
+//factory funtions:==>>is not suitable becaurse it creates copy of that particular object 
