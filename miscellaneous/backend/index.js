@@ -61,8 +61,8 @@ app.listen(port,()=>{
 // AN objects instance of that class
 
 
-//==>> inheritance 
-// class Person{
+
+// class Person{  
 //   constructor(name,age){
 //     this.name = name;
 //     this.age = age;
@@ -74,7 +74,10 @@ app.listen(port,()=>{
 // let p1 = new Person("gargi",20);
 // let p2 = new Person("monu",21);
 
-// class Person {
+
+
+//==>> 1)) inheritance 
+// class Person { //{base class or parent class}
 //   constructor(name,age){
 //     console.log("person class constructor");
 //     this.name = name;
@@ -106,6 +109,37 @@ app.listen(port,()=>{
 // console.log(s1);
 
 
+//2))
+class Mammal {
+  constructor(name){
+    this.name = name;
+    this.type = "warm-blooded";
+  }
+  eat(){
+    console.log("i am eating");
+  }
+}
+
+class Dog extends Mammal{
+  constructor(name){
+    super(name);
+  }
+  bark(){
+    console.log("wooff..");
+  }
+}
+
+class Cat extends Mammal{
+  constructor(name){
+    super(name);
+  }
+  meow(){
+    console.log("meow...");
+  }
+}
+
+let dog1 = new Dog("tommy");
+console.log(dog1);
 
 
 
