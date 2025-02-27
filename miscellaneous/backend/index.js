@@ -42,3 +42,37 @@ app.listen(port,()=>{
 // console.log(String.prototype.toUpperCase); 
 
 //factory funtions:==>>is not suitable becaurse it creates copy of that particular object 
+
+
+//new operators -->>The new operator creates a new object, sets its prototype to the constructor function’s prototype, and executes the constructor function, binding this to the newly created object.
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// let user = new Person("Alice", 25);
+// console.log(user.name); // Output: Alice
+// console.log(user.age);  // Output: 25
+
+//more efficient method for this is ===>>classes
+// classes are templets for creating objects
+// the constructor method is a special method of a class for creating and initialising
+// AN objects instance of that class
+
+class Person{
+  constructor(name,age){
+    this.name = name;
+    this.age = age;
+    }
+  talk(){
+    console.log(`Hi, my name is ${this.name}`);
+  }
+}
+let p1 = new Person("gargi",20);
+let p2 = new Person("monu",21);
+
+
+
+
+
