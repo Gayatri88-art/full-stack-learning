@@ -109,38 +109,42 @@ app.listen(port,()=>{
 // console.log(s1);
 
 
-//2))
-class Mammal {
-  constructor(name){
-    this.name = name;
-    this.type = "warm-blooded";
-  }
-  eat(){
-    console.log("i am eating");
-  }
-}
+//2)) ===>> useful when u need to reducce the repetation of perticular part
+// class Mammal {
+//   constructor(name){
+//     this.name = name;
+//     this.type = "warm-blooded";
+//   }
+//   eat(){
+//     console.log("i am eating");
+//   }
+// }
 
-class Dog extends Mammal{
-  constructor(name){
-    super(name);
-  }
-  bark(){
-    console.log("wooff..");
-  }
-}
+// class Dog extends Mammal{
+//   constructor(name){
+//     super(name);
+//   }
+//   bark(){
+//     console.log("wooff..");
+//   }
+// }
 
-class Cat extends Mammal{
-  constructor(name){
-    super(name);
-  }
-  meow(){
-    console.log("meow...");
-  }
-}
+// class Cat extends Mammal{
+//   constructor(name){
+//     super(name);
+//   }
+//   meow(){
+//     console.log("meow...");
+//   }
+// }
 
-let dog1 = new Dog("tommy");
-console.log(dog1);
+// let dog1 = new Dog("tommy");
+// console.log(dog1);
 
 
+//REST --->>(Representational state transfer)
+//rest is an architechtural style that defines the sets of constrains to be used for creating web services
+
+//best-pratice-for-best-api-design <<==for extra knowledge
 
 
