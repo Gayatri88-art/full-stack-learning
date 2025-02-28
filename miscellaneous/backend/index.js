@@ -154,4 +154,9 @@ app.listen(port,()=>{
 // 5)DELETE removes data
 
 
-
+//creating restful Apis
+// GET to get date for all post (/posts)
+// POST to add a new post (/posts)
+// GET to get one post(using id) (/posts/:id)
+// PATCH to uplod specific post (/posts/:id)
+// DELETE to delete sepecific post (/posts/:id)
