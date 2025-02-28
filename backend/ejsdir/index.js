@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const port = 8080;
 
-app.set("view engine","ejs");
+app.set("view engine","ejs"); //about views
 app.set("views",path.join(__dirname,"/views"));
 
 app.get("/",(req,res)=>{
