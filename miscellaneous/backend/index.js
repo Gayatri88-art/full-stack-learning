@@ -146,5 +146,12 @@ app.listen(port,()=>{
 //rest is an architechtural style that defines the sets of constrains to be used for creating web services
 
 //best-pratice-for-best-api-design <<==for extra knowledge
+//CRUD Operations
+// 1)GET retrive resources
+// 2)POST Submits new data to the server
+// 3)PUT updates existing data
+// 4)PATCH updates existing data partially
+// 5)DELETE removes data
+
 
 
