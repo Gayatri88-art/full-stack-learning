@@ -10,7 +10,7 @@
 
 // Creating RESTful APIs
 
-// GET /posts to get data for all posts
+// GET /posts to get data for all posts (FOR indexing like to put the data in sequence)
 // POST /posts to add a new post
 // GET /posts/:id   to get one post (using id)
 // PATCH /posts/:id   to update specific post
@@ -47,6 +47,19 @@ app.use(express.static(path.join(__dirname, "public"))); //fixed syntax
 app.get("/posts", (req, res) => {
   res.render("index.ejs",{posts});
 });
+app.get("/posts/new", (req, res) => {
+  res.render("new.ejs",{posts});
+});
+
+app.post("/posts", (req, res) => {
+  let {username,content}= req.body; //This extracts the username and content fields from the request body (data sent by the client).
+  posts.push({username,content}); //This adds the new username and content into an array named posts (which should be declared somewhere else in your code).
+  res.send("post request working!");
+  
+});
+
+
+
 
 app.listen(port, () => {
   console.log(`Listening on port: ${port}`);
