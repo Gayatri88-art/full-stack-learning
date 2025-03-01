@@ -21,7 +21,7 @@ const path = require("path");
 
 const app = express();
 const port = 8080;
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require('uuid');  //uuid ==>universally unique identifier
 
 
 app.use(express.urlencoded({ extended: true })); //Parses incoming form data.
@@ -71,6 +71,8 @@ app.get("/posts/:id",(req,res)=>{
   let post = posts.find((p)=> id ===p.id);
   res.render("show.ejs",{post}); //to show the post in details
 })
+
+
 
 
 
