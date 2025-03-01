@@ -21,22 +21,24 @@ const path = require("path");
 
 const app = express();
 const port = 8080;
+const { v4: uuidv4 } = require('uuid');
+
 
 app.use(express.urlencoded({ extended: true })); //Parses incoming form data.
 
 let posts = [
   {
-    id :"1a",
+    id :uuidv4(), //it helps u to get uniqu id's
     username : "Gayatri",
     content: "I love coding!"
   },
   {
-    id :"2b",
+    id :uuidv4(),
     username : "Sahil",
     content: "I love dev!"
   },
   {
-    id :"3c ",
+    id :uuidv4(),
     username : "Tejas",
     content: "I love db!"
   },
@@ -58,9 +60,10 @@ app.use(express.static("public"));//so that it can identify public
 
 app.post("/posts", (req, res) => {
   let {username,content}= req.body; //This extracts the username and content fields from the request body (data sent by the client).
-  posts.push({username,content}); //This adds the new username and content into an array named posts (which should be declared somewhere else in your code).
+  let id = uuidv4(); //post create karne ke sath sath ham id bhi create karenge
+  posts.push({username,content,id}); //This adds the new username and content into an array named posts (which should be declared somewhere else in your code).
   res.redirect("/posts");///now we will learn something which help us to onnect different pages
-
+  
 });
 
 app.get("/posts/:id",(req,res)=>{
