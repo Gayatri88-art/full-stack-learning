@@ -54,10 +54,9 @@ app.get("/posts/new", (req, res) => {
 app.post("/posts", (req, res) => {
   let {username,content}= req.body; //This extracts the username and content fields from the request body (data sent by the client).
   posts.push({username,content}); //This adds the new username and content into an array named posts (which should be declared somewhere else in your code).
-  res.send("post request working!");
-  
-});
+  res.redirect("/posts");///now we will learn something which help us to onnect different pages
 
+});
 
 
 
