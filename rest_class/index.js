@@ -53,6 +53,8 @@ app.get("/posts", (req, res) => {
 app.get("/posts/new", (req, res) => {
   res.render("new.ejs",{posts});
 });
+app.use(express.static("public"));//so that it can identify public
+
 
 app.post("/posts", (req, res) => {
   let {username,content}= req.body; //This extracts the username and content fields from the request body (data sent by the client).
@@ -64,8 +66,7 @@ app.post("/posts", (req, res) => {
 app.get("/posts/:id",(req,res)=>{
   let {id}= req.params;
   let post = posts.find((p)=> id ===p.id);
-  console.log(post);
-  res.send("request working");
+  res.render("show.ejs",{post}); //to show the post in details
 })
 
 

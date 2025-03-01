@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All posts</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h2>Quora posts</h2>
@@ -12,11 +12,13 @@
     <div class="post">
       <h3 class="user">@<%= post.username%></h3>
       <h4 class="content"><%= post.content%> </h4>
+      <br>
+      <a href="http://localhost:8080/posts/<%=post.id%>">See in details</a>
     </div>
   <%}%>
 <script src="index.js"></script>
 <br>
 <br>
-<a href="http://localhost:8080/posts/new"> create new post</a>using redirect to connect an
+<a href="http://localhost:8080/posts/new"> create new post</a>
 </body>
 </html>
