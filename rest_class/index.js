@@ -90,6 +90,12 @@ app.get("/posts/:id",(req,res)=>{
   res.render("show.ejs",{post}); //to show the post in details
 })
 
+app.delete("/posts/:id",(req,res)=>{
+  let {id} = req.params;
+  posts = posts.filter((p)=> id !==p.id );
+  res.redirect("/posts");
+})
+
 
 
 

@@ -7,3 +7,6 @@ background-color:blanchedalmond;
 .user{
 font-size: italic;
 }
+.delete{
+  background-color: rgb(250, 176, 154);
+}
