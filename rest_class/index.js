@@ -24,13 +24,28 @@ const port = 8080;
 
 app.use(express.urlencoded({ extended: true })); //Parses incoming form data.
 
+let posts = [
+  {
+    username : "Gayatri",
+    content: "I love coding!"
+  },
+  {
+    username : "Sahil",
+    content: "I love dev!"
+  },
+  {
+    username : "Tejas",
+    content: "I love db!"
+  },
+]
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views")); //fixed syntax
 
 app.use(express.static(path.join(__dirname, "public"))); //fixed syntax
 
-app.get("/", (req, res) => {
-  res.send("server working well!");
+app.get("/posts", (req, res) => {
+  res.render("index.ejs",{posts});
 });
 
 app.listen(port, () => {
