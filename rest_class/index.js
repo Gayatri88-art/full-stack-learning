@@ -26,14 +26,17 @@ app.use(express.urlencoded({ extended: true })); //Parses incoming form data.
 
 let posts = [
   {
+    id :"1a",
     username : "Gayatri",
     content: "I love coding!"
   },
   {
+    id :"2b",
     username : "Sahil",
     content: "I love dev!"
   },
   {
+    id :"3c ",
     username : "Tejas",
     content: "I love db!"
   },
@@ -57,6 +60,13 @@ app.post("/posts", (req, res) => {
   res.redirect("/posts");///now we will learn something which help us to onnect different pages
 
 });
+
+app.get("/posts/:id",(req,res)=>{
+  let {id}= req.params;
+  let post = posts.find((p)=> id ===p.id);
+  console.log(post);
+  res.send("request working");
+})
 
 
 
