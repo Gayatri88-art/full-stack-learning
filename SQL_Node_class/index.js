@@ -13,18 +13,29 @@ const connection =  mysql.createConnection({
   password:'1432',
 });
 
+
+//creating the fake data of 100 user
+let getRandomUser = () => {
+  return [
+    faker.string.uuid(),
+    faker.internet.username(), 
+    faker.internet.email(),
+    faker.internet.password(),
+   
+  ];
+};
+
 //inserting new data
 let q = "insert into user (id,username,email,password) values ?";
-let users = [
-  ["123b","123_newuserb","abc@gmail.comb","abcb"],
-  ["123c","123_newuserc","abc@gmail.comc","abcc"]
-];
 
-
-
+let data = [];
+for(let i =1;i<=100;i++){
+  data.push(getRandomUser()); //pushing this data to data ka khali array
+}
+ 
 //querypart
 try{
-  connection.query(q,[users],(err,result)=>{
+  connection.query(q,[data],(err,result)=>{
     if(err)throw err;
     console.log(result);
   });
@@ -34,14 +45,6 @@ try{
 //ending the process
 connection.end();
 
-// let getRandomUser = () => {
-//   return {
-//     userId: faker.string.uuid(),
-//     username: faker.internet.username(), 
-//     email: faker.internet.email(),
-//     password: faker.internet.password(),
-   
-//   };
-// };
-// console.log(getRandomUser());
+
+
 
