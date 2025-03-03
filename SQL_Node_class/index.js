@@ -13,9 +13,18 @@ const connection =  mysql.createConnection({
   password:'1432',
 });
 
+//inserting new data
+let q = "insert into user (id,username,email,password) values ?";
+let users = [
+  ["123b","123_newuserb","abc@gmail.comb","abcb"],
+  ["123c","123_newuserc","abc@gmail.comc","abcc"]
+];
+
+
+
 //querypart
 try{
-  connection.query("SHOW TABLES",(err,result)=>{
+  connection.query(q,[users],(err,result)=>{
     if(err)throw err;
     console.log(result);
   });
@@ -25,14 +34,14 @@ try{
 //ending the process
 connection.end();
 
-let getRandomUser = () => {
-  return {
-    userId: faker.string.uuid(),
-    username: faker.internet.username(), 
-    email: faker.internet.email(),
-    password: faker.internet.password(),
+// let getRandomUser = () => {
+//   return {
+//     userId: faker.string.uuid(),
+//     username: faker.internet.username(), 
+//     email: faker.internet.email(),
+//     password: faker.internet.password(),
    
-  };
-};
-console.log(getRandomUser());
+//   };
+// };
+// console.log(getRandomUser());
 
