@@ -1,9 +1,8 @@
-//npm init
+//npm init ==>>npm init is used to initialize a new Node.js project and create a package.json file
 //installing package faker ==>> (npm i @faker-js/faker)
 //installing package mysql2 ==>> to connect node with sql (npm i mysql2)
 const { faker }= require("@faker-js/faker");
 const mysql = require("mysql2");
-
 
 
 // Create the connection to database
@@ -14,8 +13,7 @@ const connection =  mysql.createConnection({
   password:'1432',
 });
 
-
-
+//querypart
 try{
   connection.query("SHOW TABLES",(err,result)=>{
     if(err)throw err;
@@ -24,6 +22,7 @@ try{
 }catch(err){
   console.log(err);
 }
+//ending the process
 connection.end();
 
 let getRandomUser = () => {
