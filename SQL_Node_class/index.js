@@ -1,9 +1,21 @@
 //npm init ==>>npm init is used to initialize a new Node.js project and create a package.json file
 //installing package faker ==>> (npm i @faker-js/faker)
 //installing package mysql2 ==>> to connect node with sql (npm i mysql2)
-const { faker }= require("@faker-js/faker");
-const mysql = require("mysql2");
+//npm i express 
+ //npm i uuid
+//for templeting we install ejs
+ //npm i ejs
 
+//required part
+ const { faker }= require("@faker-js/faker");
+const mysql = require("mysql2");
+const express = require("express"); //express ko require kar liya
+const app = express();
+const path = require("path"); //requiring path
+
+
+app.set("view engine","ejs"); //for ejs
+app.set("views",path.join(__dirname,"/views"));
 
 // Create the connection to database
 const connection =  mysql.createConnection({
@@ -25,26 +37,43 @@ let getRandomUser = () => {
   ];
 };
 
-//inserting new data
-let q = "insert into user (id,username,email,password) values ?";
+app.get("/",(req,res)=>{
+let q = "select count(*) from user";
 
-let data = [];
-for(let i =1;i<=100;i++){
-  data.push(getRandomUser()); //pushing this data to data ka khali array
-}
- 
 //querypart
 try{
-  connection.query(q,[data],(err,result)=>{
+  connection.query(q,(err,result)=>{
     if(err)throw err;
-    console.log(result);
+    let count = result[0]["count(*)"];
+    res.render("home.ejs",{count});
   });
 }catch(err){
   console.log(err);
+  res.send("some error in db");
 }
-//ending the process
-connection.end();
 
+
+
+})
+
+
+app.listen("8080",()=>{
+  console.log("server is working well");
+})
+
+
+
+// //inserting new data
+// let q = "insert into user (id,username,email,password) values ?";
+
+// let data = [];
+// for(let i =1;i<=100;i++){
+//   data.push(getRandomUser()); //pushing this data to data ka khali array
+// }
+ 
+
+// //ending the process
+// connection.end();
 
 
 
