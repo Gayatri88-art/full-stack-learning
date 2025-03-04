@@ -51,13 +51,28 @@ try{
   console.log(err);
   res.send("some error in db");
 }
+})
 
+//show user
+app.get("/user",(req,res)=>{
+  let q = "select * from user";
 
+  //querypart
+  try{
+    connection.query(q,(err,users)=>{
+      if(err)throw err;
+      
+      res.render("showusers.ejs",{users});
+    });
+  }catch(err){
+    console.log(err);
+    res.send("some error in db");
+  }
 
 })
 
 
-app.listen("8080",()=>{
+app.listen("7000",()=>{
   console.log("server is working well");
 })
 
