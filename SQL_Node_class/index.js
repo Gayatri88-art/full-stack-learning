@@ -71,7 +71,7 @@ app.get("/user",(req,res)=>{
 
 })
 
-//edit user
+//edit users
 
 
 app.listen("7000",()=>{
