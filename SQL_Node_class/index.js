@@ -71,6 +71,8 @@ app.get("/user",(req,res)=>{
 
 })
 
+//edit user
+
 
 app.listen("7000",()=>{
   console.log("server is working well");
