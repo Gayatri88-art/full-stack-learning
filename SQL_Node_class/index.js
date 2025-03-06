@@ -8,12 +8,19 @@
  //npm i method-override
 
 //required part
- const { faker }= require("@faker-js/faker");
+ 
+ const { faker } = require('@faker-js/faker');
+
 const mysql = require("mysql2");
 const express = require("express"); //express ko require kar liya
 const app = express();
 const path = require("path"); //requiring path
+const methodOverride = require("method-override");//requireing method-override
 
+
+
+app.use(methodOverride("_method"));
+app.use(express.urlencoded({extended:true})); //so it can understand by express
 
 app.set("view engine","ejs"); //for ejs
 app.set("views",path.join(__dirname,"/views"));
@@ -39,7 +46,7 @@ let getRandomUser = () => {
 };
 
 app.get("/",(req,res)=>{
-let q = "select count(*) from user";
+let q = `select count(*) from user`;
 
 //querypart
 try{
@@ -56,7 +63,7 @@ try{
 
 //show user
 app.get("/user",(req,res)=>{
-  let q = "select * from user";
+  let q = `select * from use`;
 
   //querypart
   try{
@@ -75,23 +82,29 @@ app.get("/user",(req,res)=>{
 //edit users -1)this will give u a form
 app.get("/user/:id/edit",(req,res)=>{
   let {id} = req.params;
-  let q = `select * from user where id ='${id}'`;
+  let q = `select * from user where id = '${id}' `;
+
+  try{
+    connection.query( q, (err,result)=>{
+      if(err)throw err;
+      let user = result[0];
+      res.render("edit.ejs",{user});
+    });
+  }catch(err){
+    console.log(err);
+    res.send("some error in db");
+  }
 })
-try{
-  connection.query(q,(err,result)=>{
-    if(err)throw err;
-    let user = result[0];
-    res.render("edit.ejs",{user});
-  });
-}catch(err){
-  console.log(err);
-  res.send("some error in db");
-}
+
+// //2)update db route
+app.patch("/user/:id",(req,res)=>{
+  res.send("updated");
+});
 
 app.listen("7000",()=>{
   console.log("server is working well");
 })
-//2)now actual edit is possible
+
 
 
 
