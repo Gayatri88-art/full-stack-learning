@@ -5,6 +5,7 @@
  //npm i uuid
 //for templeting we install ejs
  //npm i ejs
+ //npm i method-override
 
 //required part
  const { faker }= require("@faker-js/faker");
@@ -71,12 +72,26 @@ app.get("/user",(req,res)=>{
 
 })
 
-//edit users
-
+//edit users -1)this will give u a form
+app.get("/user/:id/edit",(req,res)=>{
+  let {id} = req.params;
+  let q = `select * from user where id ='${id}'`;
+})
+try{
+  connection.query(q,(err,result)=>{
+    if(err)throw err;
+    let user = result[0];
+    res.render("edit.ejs",{user});
+  });
+}catch(err){
+  console.log(err);
+  res.send("some error in db");
+}
 
 app.listen("7000",()=>{
   console.log("server is working well");
 })
+//2)now actual edit is possible
 
 
 
