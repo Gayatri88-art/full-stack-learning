@@ -1,4 +1,31 @@
-//starting with mangodb.......
+//website-->>mongodb.com
+//bson data -- data is stored in bson formate 
+
+//documents - mongo stores data in the form of documents
+//collection - mongo stores documents in collection.
+
+CRUD Operations
+//create in db
+//to store single document
+show collections
+db.gargi.insertOne({name:"gargi",age:21,address:"jalgaon"})
+db.gargi.find()
+
+//to store multiple document
+db.gargi.insertMany([
+    {name: "sita", age: 22, address: "rampur"},
+    {name: "sita", age: 22, address: "rampur"},
+    {name: "sita", age: 22, address: "rampur"},
+    {name: "sita", age: 22, address: "rampur"}
+])
+
+//find in db
+//for specific queries
+db.gargi.find({age:21}) --->>coursor return karega(which is referance to original)
+db.gargi.findOne({name:"sita"})  --->document return karega
+db.gargi.findOne({name:"sita",age:22}) --<<multiple pan data shodu shakto
+
+
 
 
 
