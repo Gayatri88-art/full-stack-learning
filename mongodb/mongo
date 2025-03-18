@@ -1,17 +1,17 @@
-//website-->>mongodb.com
+//website-->>https://www.mongodb.com/docs/manual/reference/operator/query/
 //bson data -- data is stored in bson formate 
 
 //documents - mongo stores data in the form of documents
 //collection - mongo stores documents in collection.
 
-CRUD Operations
+# CRUD Operations
 //create in db
 //to store single document
 show collections
 db.gargi.insertOne({name:"gargi",age:21,address:"jalgaon"})
 db.gargi.find()
 
-//to store multiple document
+# //to store multiple document
 db.gargi.insertMany([
     {name: "sita", age: 22, address: "rampur"},
     {name: "sita", age: 22, address: "rampur"},
@@ -19,11 +19,34 @@ db.gargi.insertMany([
     {name: "sita", age: 22, address: "rampur"}
 ])
 
-//find in db
+# //find in db
 //for specific queries
 db.gargi.find({age:21}) --->>coursor return karega(which is referance to original)
 db.gargi.findOne({name:"sita"})  --->document return karega
 db.gargi.findOne({name:"sita",age:22}) --<<multiple pan data shodu shakto
+
+# //comparison operator
+# $eq-Matches values that are equal to a specified value.
+# $gt-Matches values that are greater than a specified value.
+# $gte-Matches values that are greater than or equal to a specified value.
+# $in-Matches any of the values specified in an array.
+# $lt-Matches values that are less than a specified value.
+# $lte-Matches values that are less than or equal to a specified value.
+# $ne-Matches all values that are not equal to a specified value.
+# $nin-Matches none of the values specified in an array.
+
+db.gargi.find({age:{$lt:22}})
+db.gargi.find({age:{$gt:21}})
+db.gargi.find({address:{$in:["rampur","jalgaon"]}});
+db.gargi.find({
+    $or: [
+        { address: { $eq: "rampur" } },
+        { age: { $gt: 21 } }
+    ]
+})
+
+
+
 
 
 
