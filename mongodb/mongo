@@ -50,7 +50,7 @@ db.gargi.find({
 #update in db
 db.gargi.updateone({name:"sita"} ,{$set:{age=34}})
 ..
-
+..
 .
 
 
